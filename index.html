@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style/style.css" />
+    <script
+      src="https://kit.fontawesome.com/6b879f492d.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Restaurant: Tea and Stuff</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo"><h1>Restaurant</h1></div>
+        <ul>
+          <li>
+            <a href="#"
+              >ORDER<span><i class="fa-solid fa-caret-down"></i></span
+            ></a>
+          </li>
+          <li>
+            <a href="#"
+              >CATERING<span><i class="fa-solid fa-caret-down"></i></span
+            ></a>
+          </li>
+          <li>
+            <a href="#"
+              >REWARDS<span><i class="fa-solid fa-caret-down"></i></span
+            ></a>
+          </li>
+        </ul>
+        <div class="h-cta">
+          <a href="#" class="cart">
+            <i class="fa-solid fa-cart-shopping"></i>
+          </a>
+          <a href="#" class="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="info">
+          <h1 class="heading">TEA AND MEAL, <span>ANYTIME!</span></h1>
+          <h2 id="detail">
+            A single spot to fulfill the most cravings of your taste buds.
+          </h2>
+          <div class="hero-cta">
+            <input type="checkbox" id="click">
+            <label for="click" class="btn-cta">ORDER NOW</label>
+            </input>
+            <div class="popup">
+              <div class="header-p">
+                <h2>This is the popup</h2>
+                <label for="click" class="fas fa-times"></label>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa
+                vero maiores eveniet?
+              </p>
+              <label for="click" class="close-btn">Close</label>
+            </div>
+          </div>
+        </div>
+      </section>
+      <a class="gotop" href="#"><i class="fas fa-arrow-up"></i></a>
+      <section class="features">
+        <div class="nutrition">
+          <h2>Nutrition you deserve</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
+            repellendus itaque ipsa.
+          </p>
+          <button class="btn-f">
+            <a href="#">Learn more</a>
+          </button>
+        </div>
+        <div class="pi">
+          <h2>Earn the rewards</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
+            repellendus itaque ipsa.
+          </p>
+          <button class="btn-f">
+            <a href="#">Learn more</a>
+          </button>
+        </div>
+
+        <div class="app">
+          <h2>Order from the app</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
+            repellendus itaque ipsa.
+          </p>
+          <button class="btn-f">
+            <a href="#">Learn more</a>
+          </button>
+        </div>
+      </section>
+      <section class="accordian-s">
+        <div class="accordian">
+          <h2 class="accordian-title">Frequently asked questions</h2>
+          <div class="content-container">
+            <div class="question">How the app works?</div>
+            <div class="answer">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem,
+              unde! Architecto eaque dignissimos ut ea odit? Libero ducimus
+              explicabo illo.
+            </div>
+          </div>
+          <div class="content-container">
+            <div class="question">What is return policy?</div>
+            <div class="answer">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem,
+              unde! Architecto eaque dignissimos ut ea odit? Libero ducimus
+              explicabo illo.
+            </div>
+          </div>
+          <div class="content-container">
+            <div class="question">How to redeem the reward?</div>
+            <div class="answer">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem,
+              unde! Architecto eaque dignissimos ut ea odit? Libero ducimus
+              explicabo illo.
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="form">
+        <form onsubmit="event.preventDefault(); validateForm()">
+          <h1>Contact Us</h1>
+
+          <label for="name">Name:</label>
+          <input type="text" id="name" placeholder="Your name" />
+          <small class="error"></small>
+
+          <label for="email">Email:</label>
+          <input type="text" id="email" placeholder="Your email" />
+          <small class="error"></small>
+
+          <label for="message">Message:</label>
+          <textarea id="message" row="6" placeholder="Your message"></textarea>
+          <small class="error"></small>
+
+          <div class="center">
+            <input type="submit" value="Send Message" />
+            <p id="success"></p>
+          </div>
+        </form>
+      </section>
+      <section id="slider">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="testimonial_slider_area text-center owl-carousel">
+                <div class="box-area">
+                  <div class="img-area">
+                    <img src="./assets/img/1.jpg" alt="a" />
+                  </div>
+                  <h5>Person's Name</h5>
+                  <span>Designation Goes Here</span>
+                  <p class="content">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Placeat aspernatur veniam illo impedit sunt quo quaerat
+                    deleniti laudantium fuga totam explicabo nesciunt obcaecati
+                    molestiae, ea, aut consequatur ad hic enim?
+                  </p>
+                </div>
+                <div class="box-area">
+                  <div class="img-area">
+                    <img src="./assets/img/2.jpg" alt="a" />
+                  </div>
+                  <h5>Person's Name</h5>
+                  <span>Designation Goes Here</span>
+                  <p class="content">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Placeat aspernatur veniam illo impedit sunt quo quaerat
+                    deleniti laudantium fuga totam explicabo nesciunt obcaecati
+                    molestiae, ea, aut consequatur ad hic enim?
+                  </p>
+                </div>
+                <div class="box-area">
+                  <div class="img-area">
+                    <img src="./assets/img/3.jpg" alt="a" />
+                  </div>
+                  <h5>Person's Name</h5>
+                  <span>Designation Goes Here</span>
+                  <p class="content">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Placeat aspernatur veniam illo impedit sunt quo quaerat
+                    deleniti laudantium fuga totam explicabo nesciunt obcaecati
+                    molestiae, ea, aut consequatur ad hic enim?
+                  </p>
+                </div>
+                <div class="box-area">
+                  <div class="img-area">
+                    <img src="./assets/img/4.jpg" alt="a" />
+                  </div>
+                  <h5>Person's Name</h5>
+                  <span>Designation Goes Here</span>
+                  <p class="content">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Placeat aspernatur veniam illo impedit sunt quo quaerat
+                    deleniti laudantium fuga totam explicabo nesciunt obcaecati
+                    molestiae, ea, aut consequatur ad hic enim?
+                  </p>
+                </div>
+                <div class="box-area">
+                  <div class="img-area">
+                    <img src="./assets/img/5.jpg" alt="a" />
+                  </div>
+                  <h5>Person's Name</h5>
+                  <span>Designation Goes Here</span>
+                  <p class="content">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Placeat aspernatur veniam illo impedit sunt quo quaerat
+                    deleniti laudantium fuga totam explicabo nesciunt obcaecati
+                    molestiae, ea, aut consequatur ad hic enim?
+                  </p>
+                </div>
+                <div class="box-area">
+                  <div class="img-area">
+                    <img src="./assets/img/6.jpg" alt="a" />
+                  </div>
+                  <h5>Person's Name</h5>
+                  <span>Designation Goes Here</span>
+                  <p class="content">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Placeat aspernatur veniam illo impedit sunt quo quaerat
+                    deleniti laudantium fuga totam explicabo nesciunt obcaecati
+                    molestiae, ea, aut consequatur ad hic enim?
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="plate-1">
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-square-twitter"></i>
+        <i class="fa-brands fa-tiktok"></i>
+        <i class="fa-brands fa-medium"></i>
+      </div>
+      <div class="plate-2">
+        <div class="section-1">
+          <div class="col-1">
+            <h4>About Us</h4>
+            <p>Our Heritage</p>
+            <p>Our Company</p>
+          </div>
+          <div class="col-2">
+            <h4>Customer Service</h4>
+            <p>Frequently Asked Questions</p>
+          </div>
+          <div class="col-3">
+            <h4>Quick Links</h4>
+            <p>store locator</p>
+          </div>
+        </div>
+        <div class="section-2">
+          <h1>Restaurant</h1>
+        </div>
+      </div>
+      <div class="plate-3">
+        <ul>
+          <li><a>Web Accessibility</a></li>
+          <li><a>Privacy Statement</a></li>
+          <li><a>Term of Use</a></li>
+          <li><a>Site Map</a></li>
+          <li><a>Contact Us</a></li>
+        </ul>
+        <p class="right">
+          &copy; 2022 Induspie Food Company. All rights reserved.
+        </p>
+      </div>
+    </footer>
+    <script src="js/main.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      $(".testimonial_slider_area").owlCarousel({
+        autoplay: true,
+        slideSpeed: 3000,
+        items: 3,
+        nav: true,
+        navText: [
+          '<i class="fa fa-arrow-left"></i>',
+          ' <i class="fa fa-arrow-right"></i>',
+        ],
+        margin: 30,
+        dots: false,
+        responsive: {
+          320: { items: 1 },
+          767: { items: 2 },
+          600: { items: 3 },
+          1000: { items: 4 },
+        },
+      });
+    </script>
+  </body>
+</html>

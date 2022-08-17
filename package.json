@@ -1,0 +1,19 @@
+{
+  "name": "restaurant",
+  "version": "1.0.0",
+  "description": "a basic demo landing page for a restaurant ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/KashShahzad/Responsive-web-demo.git"
+  },
+  "author": "shahzad@kashinnov.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KashShahzad/Responsive-web-demo/issues"
+  },
+  "homepage": "https://github.com/KashShahzad/Responsive-web-demo#readme"
+}
