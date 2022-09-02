@@ -1,0 +1,61 @@
+.faqs {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(../../assets/img/abhishek-sanwa-limbu-LR559Dcst70-unsplash.jpg)
+    no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.accordian {
+  width: 60%;
+  background-color: white;
+  color: green;
+  padding: 3em;
+  border-radius: 3em;
+  .content-container {
+    .question {
+      padding: 1em 0px;
+      font-size: 1.2rem;
+      cursor: pointer;
+      border-bottom: 1px solid white;
+      position: relative;
+      &::after {
+        content: "+";
+
+        position: absolute;
+        right: -5px;
+        font-size: 1.7rem;
+      }
+    }
+    .answer {
+      padding-top: 1em;
+      font-size: 1.2rem;
+      line-height: 1.5;
+      width: 100%;
+
+      height: 0;
+      overflow: hidden;
+      transition: 0.5s;
+    }
+  }
+}
+
+.accordian .content-container.active .answer {
+  height: 50px;
+}
+
+.accordian .content-container.active .question {
+  font-size: 1rem;
+  transition: 0.5s;
+}
+
+.accordian .content-container.active .question::after {
+  content: "-";
+  font-size: 2rem;
+  transition: 0.5s;
+}

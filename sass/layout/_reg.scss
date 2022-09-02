@@ -1,0 +1,70 @@
+.form {
+  height: 90vh;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+form {
+  width: 60%;
+  background-color: whitesmoke;
+  color: green;
+  padding: 3em;
+  border-radius: 3em;
+  font-size: 1.2rem;
+  h1 {
+    margin: 0;
+    text-align: center;
+  }
+  label {
+    display: block;
+    margin: 1em 0;
+  }
+  input,
+  textarea {
+    width: 100%;
+    padding: 0.5em;
+    box-sizing: border-box;
+    outline: none;
+    resize: none;
+    border: none;
+    border-bottom: 1px solid black;
+  }
+  input[type="text"]:focus,
+  textarea:focus {
+    border-bottom: 1px solid green;
+  }
+  textarea::-webkit-scrollbar {
+    width: 4px;
+  }
+  textarea::-webkit-scrollbar-thumb {
+    background-color: green;
+  }
+  input[type="submit"] {
+    margin-top: 2em;
+    width: 90%;
+    max-width: 100em;
+    background-color: green;
+    border-radius: 3em;
+    color: white;
+    font-size: 1.4rem;
+    cursor: pointer;
+  }
+}
+
+.center {
+  text-align: center;
+}
+
+.error {
+  color: red;
+}
+
+.error-border {
+  border-bottom: 1px solid red;
+}
+
+#success {
+  color: green;
+}

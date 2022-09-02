@@ -1,0 +1,14 @@
+.btn {
+  font-size: 1.5rem;
+  margin: 1.5em 0.5em;
+  padding: 0.5em;
+  border-radius: 5%;
+  background-color: green;
+  color: white;
+  border: none;
+  display: inline-block;
+  cursor: pointer;
+  &:hover {
+    color: lightgreen;
+  }
+}

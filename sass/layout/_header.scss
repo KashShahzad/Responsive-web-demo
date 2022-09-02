@@ -1,0 +1,72 @@
+header {
+  font-size: 1.7rem;
+  position: fixed;
+  padding: 2em 10em;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  transition: 0.6s;
+  background-color: rgba(white, 0.5);
+}
+
+header.sticky {
+  padding: 0;
+  top: 0;
+  background-color: #fff;
+  transition: 0.6s;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.4);
+}
+
+.logo {
+  color: green;
+}
+
+nav {
+  height: 5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 3em;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  position: relative;
+  margin: 0 1em;
+}
+
+nav ul li {
+  position: relative;
+}
+
+nav ul li a {
+  letter-spacing: 0.1rem;
+  margin: 0 1.5em;
+  color: black;
+  font-weight: 500;
+  transition: 0.5s;
+}
+
+nav ul li a span {
+  padding: 0 0.5em;
+  color: green;
+}
+
+.h-cta {
+  display: flex;
+  font-size: 2.5rem;
+  width: 3.5em;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cart {
+  color: green;
+}
+.search {
+  color: green;
+}
